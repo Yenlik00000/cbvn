@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen">
+    <div class="nav bg-teal-600 text-white text-sm py-2 px-4 flex justify-between">
+        
+        
+        <p class="flex gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M21 11.597V11h1V8h-1V6c0-2.206-1.794-4-4-4H7C4.794 2 3 3.794 3 6v2H2v3h1v.597a3.97 3.97 0 0 0-.999 2.648l.004 3.758c.001.733.404 1.369.995 1.716V21a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h12v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1.274a2.02 2.02 0 0 0 .421-.313c.377-.378.585-.881.584-1.415l-.004-3.759A3.965 3.965 0 0 0 21 11.597zM8 4h8v2H8V4zM6.5 17a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 6.5 17zm4.5-5H5V8h6v4zm6.5 5a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 17.5 17zm1.5-5h-6V8h6v4z"></path></svg> Получите бесплатную доставку на дом (при заказе от $300)</p>
+        <p class="flex gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:#fff;"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg>info@gmail.com </p>  
+        <div class="flex gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="23" height="23" viewBox="0 0 256 256" xml:space="preserve">
+
+                <defs>
+                </defs>
+                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                    <path d="M 45 90 c -1.415 0 -2.725 -0.748 -3.444 -1.966 l -4.385 -7.417 C 28.167 65.396 19.664 51.02 16.759 45.189 c -2.112 -4.331 -3.175 -8.955 -3.175 -13.773 C 13.584 14.093 27.677 0 45 0 c 17.323 0 31.416 14.093 31.416 31.416 c 0 4.815 -1.063 9.438 -3.157 13.741 c -0.025 0.052 -0.053 0.104 -0.08 0.155 c -2.961 5.909 -11.41 20.193 -20.353 35.309 l -4.382 7.413 C 47.725 89.252 46.415 90 45 90 z" style="stroke: #ffff; stroke-width: 7; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill:none; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                    <path d="M 45 45.678 c -8.474 0 -15.369 -6.894 -15.369 -15.368 S 36.526 14.941 45 14.941 c 8.474 0 15.368 6.895 15.368 15.369 S 53.474 45.678 45 45.678 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10;  fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                </g>
+                </svg>
+                <p>Тараз, ул. Пушкина, 154</p>
+
+                
+        </div>
+        
+    </div>
+    
+
+
+
+
+
+
+    <nav class="menu bg-teal-500 p-4 flex items-center justify-between">
+        <div class="md:hidden cursor-pointer text-4xl text-white" onclick="toggleMenu()">☰</div>
+        <img class="bg-teal-500" src=" https://www.radiustheme.com/demo/wordpress/themes/toyup/wp-content/uploads/2024/09/light_logo.svg">
+        <nav class="text-white p-4 flex justify-between items-center">
+           
+            
+            
+            <div class="hidden md:flex space-x-4">
+                <div class="relative">
+                    <a href="#" class="mt-12 hover:text-green-300 px-4 py-2" onclick="toggleDropdown(event, 'homeDropdown')"  style="margin-left:-450px;">главный</a>
+                    <div id="homeDropdown" class="absolute left-0 mt-2 bg-white text-teal-600 hidden rounded dropdown shadow-md"  style="margin-left:-450px;">
+                        <a href="detskimir.html" class="block px-4 py-2 hover:bg-gray-200">магазин</a>
+                        <a href="contact.html" class="block px-4 py-2 hover:bg-gray-200">контакт</a>
+                        <a href="kish.html" class="block px-4 py-2 hover:bg-gray-200">видео</a>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+    
+        <div id="mobileMenu" class="hidden flex-col w-full md:hidden">
+            <a href="detskimir.html" class="block px-4 py-2 bg-white text-teal-600 ">магазин</a>
+            <a href="contact.html" class="block px-4 py-2 bg-white text-teal-600 ">контакт</a>
+            <a href="kish.html" class="block px-4 py-2 bg-white text-teal-600">видео</a>
+        </div>
+        <div class="flex items-center space-x-4 text-white">
+            <p class="flex gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z"></path></svg>24/7 Поддержка: +776-625-37-84</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"></path></svg></p>
+            
+            <div class="relative cursor-pointer" onclick="openCart()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: white;">
+                    <path d="M21 9h-1.42l-3.712-6.496-1.736.992L17.277 9H6.723l3.146-5.504-1.737-.992L4.42 9H3a1.001 1.001 0 0 0-.965 1.263l2.799 10.264A2.005 2.005 0 0 0 6.764 22h10.473c.898 0 1.692-.605 1.93-1.475l2.799-10.263A.998.998 0 0 0 21 9zm-3.764 11v1-1H6.764L4.31 11h15.38l-2.454 9z"></path>
+                    <path d="M9 13h2v5H9zm4 0h2v5h-2z"></path>
+                </svg>
+                <span id="cart-count" class="cart-badge hidden">0</span>
+           
+            </div>
+        </div>
+    </nav>
+    <div class="p-8">
+        <h1 class="text-center text-2xl text-bold mb-8">Свяжитесь с нами</h1>
+        <div class="flex justify-evenly">
+            <div class="flex gap-5 bg-white rounded w-80 p-10 border border-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" style="fill: rgba(88, 216, 207, 1);transform: ;msFilter:;"><path d="M17.707 12.293a.999.999 0 0 0-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 0 0 0-1.414l-4-4a.999.999 0 0 0-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 0 0 0-1.414l-4-4.001zm-.127 6.712c-1.248-.021-5.518-.356-8.873-3.712-3.366-3.366-3.692-7.651-3.712-8.874L7 4.414 9.586 7 8.293 8.293a1 1 0 0 0-.272.912c.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271a.991.991 0 0 0 .912-.271L17 14.414 19.586 17l-2.006 2.005z"></path></svg>
+                <p class="hover:text-teal-600"><span class="text-gray-500">Номер телефона</span><br>
+                    731-503-5577<br>
+                    731-503-5599</p>
+            </div>
+            <div class="flex gap-5 bg-white rounded w-80 p-10 border border-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" style="fill: rgba(88, 216, 207, 1);transform: ;msFilter:;"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg>
+                <p class="hover:text-teal-600"><span class="text-gray-500">Почта ID</span><br>
+                    toyup225@gmail.com<br>
+                    toyup220@gmail.com</p>
+            </div>
+            <div class="flex gap-5 bg-white rounded w-80 p-10 border border-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" style="fill: rgba(88, 216, 207, 1);transform: ;msFilter:;"><path d="M11.42 21.815a1.004 1.004 0 0 0 1.16 0C12.884 21.598 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.996c-.029 6.444 7.116 11.602 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.004.021 4.438-4.388 8.423-6 9.731-1.611-1.308-6.021-5.293-6-9.735 0-3.309 2.691-6 6-6z"></path><path d="M11 14h2v-3h3V9h-3V6h-2v3H8v2h3z"></path></svg>
+                <p class="hover:text-teal-600"><span class="text-gray-500">Адрес Место</span><br>
+                    улица Пушкина 154 город Тараз</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mx-auto p-6">
+        <div class="grid md:grid-cols-2 gap-12 bg-white p-8">
+           
+            <div class="rounded-lg shadow-sm border border-1 p-10">
+                <h2 class="text-2xl font-bold mb-4">Часы работы</h2>
+                <ul class="text-gray-700">
+                    <li class="flex justify-between py-1">Понедельник <span>8:00 - 22:00</span></li>
+                    <li class="flex justify-between py-1">Вторник <span>11:00 - 12:00</span></li>
+                    <li class="flex justify-between py-1">Среда <span>7:00 - 15:00</span></li>
+                    <li class="flex justify-between py-1">Четверг <span>7:00 - 15:00</span></li>
+                    <li class="flex justify-between py-1">Пятница <span>7:00 - 15:00</span></li>
+                    <li class="flex justify-between py-1">Суббота <span>7:00 - 15:00</span></li>
+                    <li class="flex justify-between py-1 text-red-500">Воскресенье <span>Выходной</span></li>
+                </ul>                
+            </div>
+            
+           
+            <div class="rounded-lg shadow-sm border border-1 p-10">
+                <h2 class="text-2xl font-bold mb-4">Отправить сообщение</h2>
+                <p class="text-gray-600 mb-4">Вы можете отправить нам свои пожелания.</p>
+                <form id="contactForm" class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" placeholder="Ваше имя" class="p-3 border rounded w-full">
+                        <input type="text" placeholder="Номер телефона" class="p-3 border rounded w-full">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="email" placeholder="Адрес электронной почты" class="p-3 border rounded w-full">
+                        <input type="text" placeholder="Предмет" class="p-3 border rounded w-full">
+                    </div>
+                    <textarea placeholder="Напишите свой комментарий здесь..." class="p-3 border rounded w-full h-32"></textarea>
+                    <button id="btn" type="submit" class="bg-teal-500 text-white py-2 px-4 rounded hover:bg-teal-600">Отправить сообщение</button>
+                </form>
+                <p id="successMessage" class="text-green-600 font-semibold mt-4 hidden">Ваше сообщение успешно отправлено!</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("btn").addEventListener("click", function() {
+            document.getElementById('successMessage').style.display="block";
+        });
+    </script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+        }
+
+        function toggleDropdown(event, dropdownId) {
+            event.preventDefault();
+            document.getElementById(dropdownId).classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
+
+

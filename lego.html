@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скидки на LEGO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="container mx-auto">
+        <h1 class="text-2xl font-bold mb-4">Скидки до 50% на конструкторы LEGO</h1>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 bg-white shadow-md rounded-lg">
+                <h3 class="text-lg font-semibold">LEGO Creator Space Roller Coaster</h3>
+                <p class="text-red-500">63 590 ₸ (-30%)</p>
+            </div>
+            <div class="p-4 bg-white shadow-md rounded-lg">
+                <h3 class="text-lg font-semibold">LEGO Minecraft Черепаший пляжный домик</h3>
+                <p class="text-red-500">14 290 ₸ (-30%)</p>
+            </div>
+        </div>
+        <button onclick="goBack()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md">Назад</button>
+    </div>
+
+    <script> 
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

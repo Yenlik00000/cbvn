@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            background: #000;
+            color: white;
+        }
+        .carousel {
+            height: 400px;
+        }
+        .carousel .carousel-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="carousel">
+            <a class="carousel-item" href="#one!">
+                <img src="https://lh4.googleusercontent.com/proxy/YkREMd4Tft3DuUQCMatPKqX4wEy92MNL_1_tbipv3N6KtINIs_nE2PexB6nj4aSLg4lVFz_mhx3YsLOeuytyPLMFEUsa4c2qMOQEjO6DteQ0pTEEpg">
+            </a>
+            <a class="carousel-item" href="#two!">
+                <img src="https://www.longislandaquarium.com/wp-content/uploads/2021/06/Swimming-with-Mermaids.jpg">
+            </a>
+            <a class="carousel-item" href="#three!">
+                <img src="https://www.longislandaquarium.com/wp-content/uploads/2021/06/Swimming-with-Mermaids.jpg">
+            </a>
+            <a class="carousel-item" href="#four!">
+                <img src="https://www.longislandaquarium.com/wp-content/uploads/2021/06/Swimming-with-Mermaids.jpg">
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                fullWidth: false, // Set to true if you want full width
+                indicators: true, // Show navigation dots
+                duration: 200, // Transition speed
+            });
+
+            // Auto-slide effect
+            setInterval(() => {
+                var instance = M.Carousel.getInstance(elems[0]);
+                instance.next();
+            }, 3000); // Move every 3 seconds
+        });
+    </script>
+
+</body>
+</html>
